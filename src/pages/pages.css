@@ -53,6 +53,51 @@ body {
 
 /* about */
 
+.about_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about_container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 1px 1px 5px rgb(184, 184, 184);
+  padding: 5%;
+  margin: 5% 0 2% 0;
+  background-color: rgb(252, 252, 252);
+}
+
+.about_container p {
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.about_sub_container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 5px rgb(184, 184, 184);
+    padding: 2%;
+    margin: 5% 0 2% 0;
+    background-color: rgb(252, 252, 252);
+}
+
+.about_name {
+  align-self: start;
+}
+
+
+
+
 .bottom_links {
   display: flex;
   justify-content: space-between;
