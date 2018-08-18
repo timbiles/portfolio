@@ -8,11 +8,11 @@ const Header = ({ siteTitle }) => (
     <div className="header_right">
       <h1 className="header_title">
         <Link to="/" className="header_title big_title">
-          T B
+          TB
         </Link>
       </h1>
       <div className="header_hidden">
-        <h1>| Tim Biles</h1>
+        <h3>| Tim Biles</h3>
       </div>
     </div>
     <div className="header_left">

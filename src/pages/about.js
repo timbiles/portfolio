@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import QuoteGenerator from '../components/QuoteGenerator/QuoteGenerator'
 
-class SecondPage extends Component {
+class About extends Component {
   render() {
     return (
       <div className="home_container">
@@ -13,5 +13,4 @@ class SecondPage extends Component {
   }
 }
 
-
-export default SecondPage
+export default About

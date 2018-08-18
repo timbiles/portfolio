@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const ThirdPage = () => (
+const Portfolio = () => (
   <div>
-    <h1>Jarid is a loser...</h1>
+    <h1>Hi Alissa</h1>
     <p>Welcome to page 3</p>
     <Link to="/">Go back to the homepage</Link>
   </div>
 )
 
-export default ThirdPage
+export default Portfolio
