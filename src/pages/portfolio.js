@@ -1,11 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import convoke from '../components/photos/convoke.jpg'
+
 const Portfolio = () => (
-  <div>
-    <h1>Hi Alissa</h1>
-    <p>Welcome to page 3</p>
-    <Link to="/">Go back to the homepage</Link>
+  <div className="about_main">
+    <div className="portfolio_container">
+      <h1>Portfolio</h1>
+      <p>
+        Here are some of the projecsts I have done, both personal and
+        professional.
+      </p>
+    </div>
+    <div className="portfolio_container">
+      <div>
+        <a href="http://www.convokegroups.com/" target="blank">
+          <img className="portfolio_img" src={convoke} alt="Convoke.com" />
+        </a>
+      </div>
+      <div />
+    </div>
   </div>
 )
 

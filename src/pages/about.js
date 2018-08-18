@@ -3,12 +3,14 @@ import Link from 'gatsby-link'
 
 import QuoteGenerator from '../components/QuoteGenerator/QuoteGenerator'
 import Icon from '../components/icons/icons'
+import photo from '../components/photos/tim.jpg'
 
 class About extends Component {
   render() {
     return (
       <div className="about_main">
         <div className="about_container">
+        <img className='profile_img'src={photo} alt="Tim photo"/>
           <h1>About</h1>
           <p className="about_name">I'm Tim!</p>
           <p>

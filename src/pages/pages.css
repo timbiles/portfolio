@@ -61,6 +61,7 @@ body {
 }
 
 .about_container {
+  position: relative;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -74,29 +75,34 @@ body {
 }
 
 .about_container p {
-    letter-spacing: 1px;
-    text-align: justify;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 .about_sub_container {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 1px 1px 5px rgb(184, 184, 184);
-    padding: 2%;
-    margin: 5% 0 2% 0;
-    background-color: rgb(252, 252, 252);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 1px 1px 5px rgb(184, 184, 184);
+  padding: 2%;
+  margin: 5% 0 2% 0;
+  background-color: rgb(252, 252, 252);
 }
 
 .about_name {
   align-self: start;
 }
 
-
-
+.profile_img {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  height: 180px;
+  opacity: 0.9;
+}
 
 .bottom_links {
   display: flex;
@@ -182,6 +188,39 @@ body {
 
 .arrow:hover {
   transform: scale(1.05);
+}
+
+/* Portfolio */
+
+.portfolio_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 1px 1px 5px rgb(184, 184, 184);
+  padding: 5%;
+  margin: 5% 0 2% 0;
+  background-color: rgb(252, 252, 252);
+}
+
+.portfolio_img {
+  width: 500px;
+}
+
+/* contacts */
+
+.contacts_text {
+  margin-top: 5%;
+  letter-spacing: 2px;
+}
+
+.contacts_email {
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
 @keyframes menuFade {
