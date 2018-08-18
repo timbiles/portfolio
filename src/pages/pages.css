@@ -223,6 +223,10 @@ body {
   letter-spacing: 2px;
 }
 
+.contacts_email:hover {
+    transform: scale(1.05);
+}
+
 @keyframes menuFade {
   0% {
     opacity: 0;
