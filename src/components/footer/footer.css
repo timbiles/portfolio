@@ -7,7 +7,14 @@
 }
 
 .footer p {
+    font-size: .8rem;
+}
+
+.footer_container {
     display: flex;
     align-items: flex-end;
-    font-size: .8rem;
+}
+
+.olive {
+    height: 20px;
 }

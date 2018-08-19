@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import convoke from '../components/photos/convoke.jpg'
+import region20 from '../components/photos/Region20.jpg'
 
 const Portfolio = () => (
   <div className="about_main">
@@ -13,12 +14,23 @@ const Portfolio = () => (
       </p>
     </div>
     <div className="portfolio_container">
-      <div>
+      <div className='port_sub_container'>
         <a href="http://www.convokegroups.com/" target="blank">
           <img className="portfolio_img" src={convoke} alt="Convoke.com" />
         </a>
+        <div className='port_hidden'>
+          <h2>Convoke</h2>
+        </div>
       </div>
-      <div />
+      <div className='port_sub_container'>
+        <a href="http://www.convokegroups.com/" target="blank">
+          <img className="portfolio_img" src={region20} alt="Convoke.com" />
+        </a>
+        <div className='port_hidden'>
+          <h2>Region 20</h2>
+        </div>
+      </div>
+
     </div>
   </div>
 )

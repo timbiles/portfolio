@@ -5,7 +5,14 @@ import './footer.css'
 
 const Footer = ({ siteTitle }) => (
   <div className="footer">
-    <p>© Olive Branch Designs</p>
+    <div className="footer_container">
+      <p>© Olive Branch Designs</p>
+      <img
+        className="olive"
+        src="https://image.flaticon.com/icons/svg/85/85254.svg"
+        alt=""
+      />
+    </div>
   </div>
 )
 

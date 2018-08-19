@@ -28,7 +28,7 @@ body {
 }
 
 .main_sub {
-  margin-top: 5%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +37,7 @@ body {
 .main_text {
   animation: textFade 1.5s;
   color: rgb(80, 80, 80);
+  font-size: 3rem;
 }
 
 .main_sub_text {
@@ -206,8 +207,44 @@ body {
   background-color: rgb(252, 252, 252);
 }
 
+.port_sub_container {
+  display: flex;
+  position: relative;
+}
+
 .portfolio_img {
   width: 500px;
+  box-shadow: 1px 1px 15px rgb(184, 184, 184);
+}
+
+.port_hidden {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 102%;
+  width: 100%;
+}
+
+.portfolio_img:hover {
+  transform: scale(1.003);
+  opacity: 0.96;
+}
+
+.port_sub_container:hover .port_hidden {
+  display: block;
+  animation: rightFade 0.7s;
+}
+
+@keyframes rightFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* contacts */
@@ -224,7 +261,7 @@ body {
 }
 
 .contacts_email:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes menuFade {
