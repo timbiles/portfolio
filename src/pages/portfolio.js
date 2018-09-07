@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import convoke from '../components/photos/convoke.jpg'
+import convoke from '../components/photos/Convoke.jpg'
 import region20 from '../components/photos/Region20.jpg'
 import dad from '../components/photos/dad-portfolio.jpg'
 
