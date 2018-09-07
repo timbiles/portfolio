@@ -1,5 +1,9 @@
 .header {
   background-image: url(https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -38,8 +42,8 @@
 }
 
 .header_hidden h3 {
-    font-size: 2rem;
-    font-weight: 450;
+  font-size: 2rem;
+  font-weight: 450;
 }
 
 .header_right:hover .header_hidden {
@@ -55,11 +59,10 @@
 }
 
 .header h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .header h2:hover {
-
   border-bottom: 5px solid rgb(127, 52, 197);
   padding-bottom: 1%;
 }
