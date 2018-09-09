@@ -60,9 +60,9 @@ export default class Icon extends Component {
       },
     ]
 
-    const map = icons.map(e => {
+    const map = icons.map((e, i) => {
       return (
-        <div className="icon_container">
+        <div key={i} className="icon_container">
           <div className="image_front">
             <div className="image_name">
               <p>{e.name}</p>

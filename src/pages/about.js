@@ -10,7 +10,7 @@ class About extends Component {
     return (
       <div className="about_main">
         <div className="about_container">
-        <img className='profile_img'src={photo} alt="Tim photo"/>
+          <img className="profile_img" src={photo} alt="Tim photo" />
           <h1>About</h1>
           <p className="about_name">I'm Tim!</p>
           <p>
@@ -23,8 +23,8 @@ class About extends Component {
             programming.
           </p>
           <p>
-            I am a husband, father, drummer, board-game player, TV-enthusiast,
-            and coffee lover.{' '}
+            I am a husband, father, drummer, runner, board-game player,
+            TV-enthusiast, and coffee lover.{' '}
           </p>
           <p>
             If you are in need of a specific project, send me a message and we

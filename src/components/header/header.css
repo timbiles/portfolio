@@ -39,16 +39,17 @@
   color: #fff;
   letter-spacing: 1px;
   margin-left: 2%;
-}
-
-.header_hidden h3 {
-  font-size: 2rem;
-  font-weight: 450;
+  transition: 1s ease;
 }
 
 .header_right:hover .header_hidden {
   display: block;
   animation: rightFade 0.7s;
+}
+
+.header_hidden h3 {
+  font-size: 2rem;
+  font-weight: 450;
 }
 
 .header_left {
@@ -65,7 +66,9 @@
 .header h2:hover {
   border-bottom: 5px solid rgb(127, 52, 197);
   padding-bottom: 1%;
+  transition: .2s ease;
 }
+
 
 @keyframes rightFade {
   0% {
@@ -76,5 +79,17 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes leftFade {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-300px);
   }
 }
