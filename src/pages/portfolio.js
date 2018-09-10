@@ -92,7 +92,7 @@ const map = arr.map((e, i) => {
 })
 
 const Portfolio = () => (
-  <div className="about_main">
+  <div className="portfolio_main">
     <div className="portfolio_container">
       <h1>Portfolio</h1>
       <p>

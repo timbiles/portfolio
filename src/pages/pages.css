@@ -76,6 +76,57 @@ mark {
   color: rgb(127, 52, 197);
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip_hidden {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(80, 80, 80);
+  /* color: #fff; */
+color: #fff;
+  font-size: .8rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltip_hidden::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(80, 80, 80) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip_hidden {
+  visibility: visible;
+  animation: toolTip .8s;
+  animation-delay: .4s;
+  transition-delay: .4s;
+}
+
+@keyframes toolTip{
+  0%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 /* about */
 
 .about_main {
