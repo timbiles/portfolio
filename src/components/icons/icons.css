@@ -36,7 +36,7 @@
   margin-bottom: 0;
 }
 
-.image_icon:hover, svg:hover {
+.image_icon:hover, .image_front svg:hover {
   animation: iconOut 0.4s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
