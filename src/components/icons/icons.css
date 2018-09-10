@@ -31,12 +31,12 @@
 
 .image_name p {
   text-align: center;
-  border-bottom: 1px solid rgb(128, 128, 128);
-  font-size: 0.9rem;
-  
+  font-size: 1rem;
+  color: rgb(70, 70, 70);
+  margin-bottom: 0;
 }
 
-.image_icon:hover {
+.image_icon:hover, svg:hover {
   animation: iconOut 0.4s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -47,7 +47,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: scale_in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: moveRight .8s;
+  /* animation: scale_in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
 }
 
 @keyframes iconOut {
@@ -73,3 +74,39 @@
   }
 }
 
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+    letter-spacing: 15px;
+  }
+  15% {
+    opacity: .3;    
+  }
+  30% {
+    transform: translateX(60px);
+    opacity: .6;
+  }
+
+  50% {
+    transform: translateX(0);  
+    opacity: 1;
+    letter-spacing: 0;
+    
+  }
+
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  
+}

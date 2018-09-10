@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import './header.css'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div className="header">
     <div className="header_right">
       <h1 className="header_title">

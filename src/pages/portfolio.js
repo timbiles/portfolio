@@ -5,6 +5,28 @@ import convoke from '../components/photos/Convoke.jpg'
 import region20 from '../components/photos/Region20.jpg'
 import dad from '../components/photos/dad-portfolio.jpg'
 
+const arr = [
+  {
+    title: 'Convoke',
+    img: convoke,
+    link: 'http://www.convokegroups.com/',
+  },
+  {
+    title: 'Deron Biles',
+    img: dad,
+    link: 'http://204.48.21.195:8081/',
+  },
+]
+
+const map = arr.map((e, i) => {
+  return (
+    <div key={i}>
+      <h1>{e.title}</h1>
+      <img className="portfolio_img" src={e.img} alt={e.title} />
+    </div>
+  )
+})
+
 const Portfolio = () => (
   <div className="about_main">
     <div className="portfolio_container">
@@ -15,7 +37,9 @@ const Portfolio = () => (
       </p>
     </div>
     <div className="portfolio_container">
-      <div className='port_sub_container'>
+      <div>{map}</div>
+
+      {/*} <div className='port_sub_container'>
         <a href="http://www.convokegroups.com/" target="blank">
           <img className="portfolio_img" src={convoke} alt="Convoke.com" />
         </a>
@@ -23,7 +47,7 @@ const Portfolio = () => (
           <h2>Convoke</h2>
         </div>
       </div>
-      <div className='port_sub_container'>
+       <div className='port_sub_container'>
         <a href="http://www.convokegroups.com/" target="blank">
           <img className="portfolio_img" src={region20} alt="Convoke.com" />
         </a>
@@ -38,8 +62,7 @@ const Portfolio = () => (
         <div className='port_hidden'>
           <h2>Deron Biles</h2>
         </div>
-      </div>
-
+      </div> */}
     </div>
   </div>
 )
