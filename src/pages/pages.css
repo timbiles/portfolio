@@ -268,6 +268,9 @@ color: #fff;
 
 /* Portfolio */
 
+.portfolio_main {
+  width: 70%;
+}
 .portfolio_container {
   position: relative;
   width: 100%;
