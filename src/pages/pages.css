@@ -58,6 +58,7 @@ body {
   margin-bottom: 0;
 }
 
+
 @keyframes mouseClick {
   10% {
     transform: scale(1);
