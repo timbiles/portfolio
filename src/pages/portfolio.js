@@ -84,12 +84,39 @@ const map = arr.map((e, i) => {
         </div>
         <div className="back_flip">
           <h1 className="port_title back_title">{e.title}</h1>
-          <div className='e_holder'>
+          <div className="e_holder">
+            <a href={e.link}>
+              <p className="port_map_link">{e.url}</p>
+            </a>
+            <p className="email_line">|</p>
+          </div>
+          <p className="port_des">{e.description}</p>
+          <div className="port_map_sub">
+            {e.frameworks.map((el, i) => (
+              <p className="packages_map" key={i}>
+                {el}
+              </p>
+            ))}
+          </div>
+          <img className='back_flip_img' src={e.img} alt="Portfolio cover"/>
+        </div>
+      </div>
+    </div>
+  )
+})
 
-          <a href={e.link}>
-            <p className="port_map_link">{e.url}</p>
-          </a>
-          <p className='email_line'>|</p>
+const mapper = arr.map((e, i) => {
+  return (
+    <div key={i} className="vertical_map">
+      <div className="portfolio_subb">
+        <h1 className="vertical_title">{e.title}</h1>
+        <img src={e.img} alt="image" />
+
+        <div className="hidden_info">
+          <div className="e_holder">
+            <a href={e.link}>
+              <p className="port_map_link">{e.url}</p>
+            </a>
           </div>
           <p className="port_des">{e.description}</p>
           <div className="port_map_sub">
@@ -100,6 +127,7 @@ const map = arr.map((e, i) => {
             ))}
           </div>
         </div>
+
       </div>
     </div>
   )
@@ -114,10 +142,12 @@ const Portfolio = () => (
         professional.
       </p>
     </div>
-  
+
     <div className="portfolio_container container2">
       <div>{map}</div>
     </div>
+
+    {/* <div className="test_container">{mapper}</div> */}
   </div>
 )
 

@@ -294,11 +294,11 @@ mark {
 
 .port_map a {
   text-decoration: none;
-  color: rgb(75, 75, 75);
 }
 
 .port_des {
-  text-align: justify;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 
 .port_map_sub {
@@ -306,6 +306,7 @@ mark {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 10%;
 }
 
 .packages_map {
@@ -377,6 +378,8 @@ mark {
 
 .port_map_link {
   display: inline-block;
+  color: rgb(56, 56, 56);
+  
 }
 
 .e_holder {
@@ -415,6 +418,7 @@ mark {
 /* flip the pane when hovered */
 .port_map:hover .flipper {
   transform: rotateY(180deg);
+  transition-delay: .2s;
 }
 
 .port_map,
@@ -460,6 +464,72 @@ mark {
 /* back, initially hidden pane */
 .back_flip {
   transform: rotateY(180deg);
+  position: relative;
+}
+
+.back_flip_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .1;
+  overflow: hidden;
+  margin: 0;
+  z-index: -1;
+}
+
+/* testing */
+
+.test_container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 20%;
+  
+}
+
+.vertical_map {
+  width: 15%;
+  height: 50vh;
+  transition: 0.5s;
+  margin: 0.4%;
+  text-align: center;
+}
+
+.vertical_title {
+  font-size: 0.9rem;
+  transition: 0.5s;
+  transform: translateY(150px);
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.vertical_map img {
+  width: 100%;
+}
+
+.vertical_map:hover {
+  width: 30%;
+  transition: 0.5s;
+  box-shadow: 1px 1px 5px 2px rgb(214, 214, 214);
+height: 100%;
+  
+}
+
+.vertical_map:hover .vertical_title {
+  font-size: 2rem;
+  transition: 0.5s;
+  transform: translate(0);
+  
+}
+
+.vertical_map:hover .hidden_info {
+  display: flex;
+animation: fadeIn 2s;
+}
+
+.hidden_info {
+  display: none;
+  flex-direction: column;
 }
 
 @keyframes email {
@@ -491,6 +561,7 @@ mark {
 .contacts_text {
   margin-top: 5%;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .contacts_email {
@@ -501,6 +572,10 @@ mark {
 
 .contacts_email:hover {
   transform: scale(1.05);
+}
+
+.contacts_sub {
+  margin-top: 10vh;
 }
 
 @keyframes menuFade {
@@ -541,5 +616,15 @@ mark {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
