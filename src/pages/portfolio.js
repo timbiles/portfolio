@@ -138,16 +138,13 @@ const Portfolio = () => (
     <div className="portfolio_container">
       <h1>Portfolio</h1>
       <p>
-        Here are some of the projecsts I have done, both personal and
-        professional.
+       A catalog of recent freelance and personal projects.
       </p>
     </div>
 
     <div className="portfolio_container container2">
       <div>{map}</div>
     </div>
-
-    {/* <div className="test_container">{mapper}</div> */}
   </div>
 )
 

@@ -33,10 +33,71 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+
+
+.main_title1 {
+  display: flex;
+  animation: textSubFade 1.5s;  
+}
+
+.index_img {
+  width: 30px;
+  animation: mouseClick 4s 1s infinite;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.main_text {
+  animation: mouseClick2 4s 1s infinite;
+  color: rgb(80, 80, 80);
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+@keyframes mouseClick {
+  10% {
+    transform: scale(1);
+  }
+
+  12% {
+    transform: scale(0.9);
+  }
+  20% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1);
+  }
+}
+
+@keyframes mouseClick2 {
+  10% {
+    transform: scale(1);
+  }
+
+  11% {
+    opacity: 1;
+  }
+  12% {
+    transform: scale(0.96);
+    opacity: .8;
+  }
+  20% {
+    transform: scale(0.96);
+    opacity: .8;    
+  }
+  27% {
+    transform: scale(1);
+    opacity: 1;    
+  }
 }
 
 .main_sub2 {
-  margin-top: 40vh;
+  margin-top: 30vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -53,14 +114,8 @@ body {
   cursor: pointer;
 }
 
-.main_text {
-  animation: textFade 1.5s;
-  color: rgb(80, 80, 80);
-  font-size: 3rem;
-}
-
 .main_sub_text {
-  animation: textSubFade 2.5s;
+  animation: textSubFade 2s;
   color: rgb(80, 80, 80);
 }
 
@@ -131,6 +186,7 @@ mark {
     transform: translate(0);
   }
 }
+
 /* about */
 
 .about_main {
@@ -155,8 +211,8 @@ mark {
 }
 
 .about_container p {
-  letter-spacing: 1px;
-  text-align: justify;
+  letter-spacing: 1.5px;
+  align-self: start;
 }
 
 .about_sub_container {
@@ -274,10 +330,13 @@ mark {
 
 .portfolio_main {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio_container {
   position: relative;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,6 +345,10 @@ mark {
   padding: 5%;
   margin: 5% 0 2% 0;
   box-shadow: 1px 1px 5px grey;
+}
+
+.portfolio_container p {
+  letter-spacing: 2px;
 }
 
 .container2 {
@@ -379,7 +442,6 @@ mark {
 .port_map_link {
   display: inline-block;
   color: rgb(56, 56, 56);
-  
 }
 
 .e_holder {
@@ -418,7 +480,7 @@ mark {
 /* flip the pane when hovered */
 .port_map:hover .flipper {
   transform: rotateY(180deg);
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
 
 .port_map,
@@ -471,7 +533,7 @@ mark {
   position: absolute;
   bottom: 0;
   left: 0;
-  opacity: .1;
+  opacity: 0.1;
   overflow: hidden;
   margin: 0;
   z-index: -1;
@@ -484,7 +546,6 @@ mark {
   justify-content: center;
   height: 100%;
   margin-bottom: 20%;
-  
 }
 
 .vertical_map {
@@ -511,20 +572,18 @@ mark {
   width: 30%;
   transition: 0.5s;
   box-shadow: 1px 1px 5px 2px rgb(214, 214, 214);
-height: 100%;
-  
+  height: 100%;
 }
 
 .vertical_map:hover .vertical_title {
   font-size: 2rem;
   transition: 0.5s;
   transform: translate(0);
-  
 }
 
 .vertical_map:hover .hidden_info {
   display: flex;
-animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .hidden_info {
@@ -571,11 +630,26 @@ animation: fadeIn 2s;
 }
 
 .contacts_email:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
+}
+
+.contacts_email:active {
+  transform: scale(.99);
 }
 
 .contacts_sub {
   margin-top: 10vh;
+}
+
+.contacts_subb {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts_subb p {
+  display: inline-block;
+  align-self: center;
 }
 
 @keyframes menuFade {

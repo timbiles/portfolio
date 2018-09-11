@@ -6,7 +6,10 @@ import './pages.css'
 const IndexPage = () => (
   <div className="main_container">
     <div className="main_sub">
-      <h1 className="main_text">Tim Biles</h1>
+      <div className="main_title1">
+        <h1 className="main_text">Tim Biles</h1>
+        <img className='index_img' src="https://image.flaticon.com/icons/svg/587/587376.svg" alt="" />
+      </div>
       <h3 className="main_sub_text">Web Developer</h3>
     </div>
     <div className="main_sub2">
