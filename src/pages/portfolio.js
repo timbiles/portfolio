@@ -13,7 +13,7 @@ const arr = [
     link: 'http://www.convokegroups.com/',
     url: 'convokegroups.com',
     description:
-      'An application designed to bring people together to socialize through common interests',
+      `An application designed to bring people together to socialize through common interests. **Voted Best Overall Project**`,
     frameworks: [
       'Javascript',
       'React',
@@ -51,7 +51,7 @@ const arr = [
     img: dad,
     link: 'http://204.48.21.195:8081/',
     url: 'deronjbiles.com',
-    description: 'A portfolio application built for a professor and minister.',
+    description: 'A personal portfolio built for a professor, minister, and public speaker.',
     frameworks: [
       'Javascript',
       'React',
