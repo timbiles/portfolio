@@ -68,24 +68,38 @@ const arr = [
 const map = arr.map((e, i) => {
   return (
     <div className="port_map" key={i}>
-      <h1 className="port_title">{e.title}</h1>
-      <div className='img_holder'>
-        <img className="portfolio_img" src={e.img} alt={e.title} />
-        <div className='hidden_mag'>
-
-        <img className='magnifying_glass' src="https://image.flaticon.com/icons/svg/149/149852.svg" alt=""/>
+      <div className="flipper">
+        <div className="front_flip">
+          <h1 className="port_title">{e.title}</h1>
+          <div className="img_holder">
+            <img className="portfolio_img" src={e.img} alt={e.title} />
+            <div className="hidden_mag">
+              <img
+                className="magnifying_glass"
+                src="https://image.flaticon.com/icons/svg/149/149852.svg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <a href={e.link}>
-        <p className="port_map_link">{e.url}</p>
-      </a>
-      <p className="port_des">{e.description}</p>
-      <div className="port_map_sub">
-        {e.frameworks.map((el, i) => (
-          <p className="packages_map" key={i}>
-            {el}
-          </p>
-        ))}
+        <div className="back_flip">
+          <h1 className="port_title back_title">{e.title}</h1>
+          <div className='e_holder'>
+
+          <a href={e.link}>
+            <p className="port_map_link">{e.url}</p>
+          </a>
+          <p className='email_line'>|</p>
+          </div>
+          <p className="port_des">{e.description}</p>
+          <div className="port_map_sub">
+            {e.frameworks.map((el, i) => (
+              <p className="packages_map" key={i}>
+                {el}
+              </p>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -100,6 +114,7 @@ const Portfolio = () => (
         professional.
       </p>
     </div>
+  
     <div className="portfolio_container container2">
       <div>{map}</div>
     </div>

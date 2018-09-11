@@ -47,9 +47,9 @@ body {
   border-radius: 50%;
 }
 
-.main_sub2 svg:hover{
+.main_sub2 svg:hover {
   fill: rgb(127, 52, 197);
-  transition: .8s;
+  transition: 0.8s;
   cursor: pointer;
 }
 
@@ -85,9 +85,8 @@ mark {
   visibility: hidden;
   width: 120px;
   background-color: rgb(80, 80, 80);
-  /* color: #fff; */
-color: #fff;
-  font-size: .8rem;
+  color: #fff;
+  font-size: 0.8rem;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -98,8 +97,13 @@ color: #fff;
   margin-left: -60px;
 }
 
+.th2 {
+  width: 200px !important;
+  margin-left: -100px !important;
+}
+
 .tooltip .tooltip_hidden::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -111,15 +115,15 @@ color: #fff;
 
 .tooltip:hover .tooltip_hidden {
   visibility: visible;
-  animation: toolTip .8s;
-  animation-delay: .4s;
-  transition-delay: .4s;
+  animation: toolTip 0.8s;
+  animation-delay: 0.3s;
+  transition-delay: 0.4s;
 }
 
-@keyframes toolTip{
-  0%{
+@keyframes toolTip {
+  0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
 
   100% {
@@ -288,14 +292,6 @@ color: #fff;
   box-shadow: none;
 }
 
-.port_map {
-  width: 500px;
-  margin-bottom: 5%;
-  padding-bottom: 5%;
-  box-shadow: 1px 1px 5px 2px grey;
-  padding: 3% 2%;
-}
-
 .port_map a {
   text-decoration: none;
   color: rgb(75, 75, 75);
@@ -318,7 +314,7 @@ color: #fff;
   margin: 1%;
   padding: 0 2%;
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
   color: rgb(75, 75, 75);
   position: relative;
 }
@@ -383,9 +379,99 @@ color: #fff;
   display: inline-block;
 }
 
-.port_map_link:hover {
-  color: rgb(127, 52, 197)
+.e_holder {
+  display: flex;
+}
 
+.email_line {
+  display: none;
+  transform: translateX(5px);
+}
+
+.e_holder:hover .email_line {
+  display: block;
+  animation: email 1s;
+}
+
+.port_map {
+  width: 70vh;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  padding: 3% 2%;
+}
+
+.port_title {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 1%;
+}
+
+.back_title {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+/* ----flipper---- */
+
+/* flip the pane when hovered */
+.port_map:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.port_map,
+.front_flip,
+.back_flip {
+  /* width: 320px; */
+  min-height: 50vh;
+  height: 60vh;
+}
+
+.front_flip,
+.back_flip {
+  box-shadow: 1px 1px 5px 2px grey;
+  padding: 2%;
+  width: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* hide back of pane during swap */
+.front_flip,
+.back_flip {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front_flip {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back_flip {
+  transform: rotateY(180deg);
+}
+
+@keyframes email {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
 }
 
 @keyframes rightFade {
