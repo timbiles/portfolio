@@ -49,7 +49,7 @@ const arr = [
   {
     title: 'Deron Biles',
     img: dad,
-    link: 'http://206.189.70.175:3001/',
+    link: 'http://www.deronjbiles.com/',
     url: 'deronjbiles.com',
     description: 'A personal portfolio built for a professor, minister, and public speaker.',
     frameworks: [
