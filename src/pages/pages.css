@@ -47,7 +47,7 @@ body {
   width: 30px;
   animation: mouseClick 4s 1s infinite;
   transition: all 0.2s ease-in-out;
-
+  margin-top: 20px;
 }
 
 .main_text {
@@ -95,6 +95,16 @@ body {
     transform: scale(1);
     opacity: 1;    
   }
+}
+
+@media(max-width: 515px) {
+.main_container {
+  width: 100%;
+}
+
+.main_sub {
+  width: 100%;
+}
 }
 
 .main_sub2 {
@@ -703,3 +713,4 @@ mark {
     opacity: 1;
   }
 }
+

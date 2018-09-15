@@ -97,3 +97,37 @@
     transform: translateX(-300px);
   }
 }
+
+@media (max-width: 900px) {
+  .header h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_left {
+    width: 58%;
+  }
+
+  .header_right {
+    width: 42%
+  }
+
+  .header h3, .big_title {
+    font-size: 1.7rem;
+  }
+
+  .big_title {
+    width: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h3, .big_title {
+    font-size: 1.3rem;
+  }
+  .header h2 {
+    font-size: .7rem;
+  }
+
+}
