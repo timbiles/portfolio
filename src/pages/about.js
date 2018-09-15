@@ -10,8 +10,8 @@ class About extends Component {
     return (
       <div className="about_main">
         <div className="about_container">
-          <img className="profile_img" src={photo} alt="Tim photo" />
           <h1>About</h1>
+          <img className="profile_img" src={photo} alt="Tim photo" />
           <p className="about_name">I'm Tim!</p>
           <p>
             I'm a full stack, javascript developer in the Dallas/Fort Worth
