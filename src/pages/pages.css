@@ -207,7 +207,7 @@ mark {
   justify-content: space-between;
 }
 
-.about_container {
+.about_container, .contact_container{
   position: relative;
   width: 70%;
   display: flex;
@@ -779,6 +779,27 @@ mark {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media(max-width: 800px) {
+  .contact_container {
+    width: 90%;
+    margin-top: 10vh;
+  }
+}
+
+@media(max-width: 550px) {
+  
+  .contacts_text {
+    font-size: .8rem;
+  }
+
+  .contact_container {
+    font-size: .7rem; 
+  }
+  .contacts_sub {
+    margin-top: 5vh;
   }
 }
 
