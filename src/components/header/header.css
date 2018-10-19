@@ -14,11 +14,17 @@
   display: flex;
 }
 
-.header_title {
+.header_title,
+.focused_title {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #fff;
+}
+
+.focused_title {
+  color: rgb(224, 224, 224);
+  font-size: 10em;
 }
 
 .big_title {
@@ -28,9 +34,9 @@
   width: 90px;
 }
 
-.header_title:active {
+/* .header_title:active {
   color: rgb(224, 224, 224);
-}
+} */
 
 .header_right {
   display: flex;

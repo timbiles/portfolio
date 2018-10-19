@@ -3,6 +3,18 @@ import Link from 'gatsby-link'
 
 import './header.css'
 
+const links = [
+  'About', 'Portfolio', 'Contact'
+]
+
+const map = links.map((e, i) => {
+  return <Link 
+  key={i}
+  className='header_title' to={`/${e}`}>
+  <h2>{e}</h2>
+</Link>
+})
+
 const Header = () => (
   <div className="header">
     <div className="header_right">
@@ -17,16 +29,7 @@ const Header = () => (
       </div>
     </div>
     <div className="header_left">
-      <Link className="header_title" to="/about">
-        <h2>About</h2>
-      </Link>
-      <Link className="header_title" to="/portfolio">
-        <h2>Portfolio</h2>
-      </Link>
-
-      <Link className="header_title" to="/contact">
-        <h2>Contact</h2>
-      </Link>
+    {map}
     </div>
   </div>
 )

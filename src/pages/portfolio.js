@@ -3,8 +3,9 @@ import Link from 'gatsby-link'
 
 import convoke from '../components/photos/Convoke.jpg'
 import region20 from '../components/photos/Region20.jpg'
-import BudgetUs from '../components/photos/BudgetUs.jpg'
+import budgetUs from '../components/photos/BudgetUs.jpg'
 import dad from '../components/photos/dad-portfolio.jpg'
+import breakingBad from '../components/photos/breakingbadapi.jpg';
 
 const arr = [
   {
@@ -30,7 +31,7 @@ const arr = [
   },
   {
     title: 'BudgetUs',
-    img: BudgetUs,
+    img: budgetUs,
     link: 'http://www.budgetus.online',
     url: 'budgetus.online',
     description:
@@ -61,6 +62,23 @@ const arr = [
       'PostrgresSQL',
       'Nodemailer',
       'Moment',
+    ],
+  },
+  {
+    title: 'The Breaking Bad API',
+    img: breakingBad,
+    link: 'http://142.93.17.67:3001/',
+    url: 'thebreakingbadapi.com',
+    description:
+      'This site serves as a documentation for a custom API on the AMC television series, Breaking Bad.',
+    frameworks: [
+      'Javascript',
+      'React',
+      'Redux',
+      'Node',
+      'Express',
+      'PostrgresSQL',
+      'Custom API endpoints'
     ],
   },
 ]
@@ -143,7 +161,8 @@ const Portfolio = () => (
     </div>
 
     <div className="portfolio_container container2">
-      <div>{map}</div>
+      {/* <div className='map_holder'>{map}</div> */}
+      {map}
     </div>
   </div>
 )
