@@ -67,8 +67,8 @@ const arr = [
   {
     title: 'The Breaking Bad API',
     img: breakingBad,
-    link: 'http://142.93.17.67:3001/',
-    url: 'thebreakingbadapi.com',
+    link: 'http://www.breakingbadapi.com/',
+    url: 'breakingbadapi.com',
     description:
       'This site serves as a documentation for a custom API on the AMC television series, Breaking Bad.',
     frameworks: [
