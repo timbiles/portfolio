@@ -5,16 +5,16 @@ import convoke from '../components/photos/Convoke.jpg'
 import region20 from '../components/photos/Region20.jpg'
 import budgetUs from '../components/photos/BudgetUs.jpg'
 import dad from '../components/photos/dad-portfolio.jpg'
-import breakingBad from '../components/photos/breakingbadapi.jpg';
+import breakingBad from '../components/photos/breakingbadapi.jpg'
+import flex from '../components/photos/flex.jpg'
 
 const arr = [
   {
     title: 'Convoke',
     img: convoke,
-    link: 'http://www.convokegroups.com/',
+    link: 'https://www.convokegroups.com/',
     url: 'convokegroups.com',
-    description:
-      `An application designed to bring people together to socialize through common interests. **Voted Best Overall Project**`,
+    description: `An application designed to bring people together to socialize through common interests. **Voted Best Overall Project**`,
     frameworks: [
       'Javascript',
       'React',
@@ -52,9 +52,10 @@ const arr = [
   {
     title: 'Deron Biles',
     img: dad,
-    link: 'http://www.deronjbiles.com/',
+    link: 'https://www.deronjbiles.com/',
     url: 'deronjbiles.com',
-    description: 'A personal portfolio built for a professor, minister, and public speaker.',
+    description:
+      'A personal portfolio built for a professor, minister, and public speaker.',
     frameworks: [
       'Javascript',
       'React',
@@ -70,7 +71,7 @@ const arr = [
   {
     title: 'The Breaking Bad API',
     img: breakingBad,
-    link: 'http://www.breakingbadapi.com/',
+    link: 'https://www.breakingbadapi.com/',
     url: 'breakingbadapi.com',
     description:
       'This site serves as a documentation for a custom API on the AMC television series, Breaking Bad.',
@@ -82,7 +83,22 @@ const arr = [
       'Express',
       'PostrgresSQL',
       'Styled Components',
-      'Custom API endpoints'
+      'Custom API endpoints',
+    ],
+  },
+  {
+    title: 'CSS Flex Mex',
+    img: flex,
+    link: 'https://cssflexmex.netlify.com/',
+    url: 'cssflexmex.netlify.com',
+    description:
+      'CSS Flex Mex is a tool designed to help developers understand the CSS display properties flex and grid.',
+    frameworks: [
+      'Javascript',
+      'React',
+      'Styled Components',
+      'Custom modal',
+      'Css code generator'
     ],
   },
 ]
@@ -120,7 +136,7 @@ const map = arr.map((e, i) => {
               </p>
             ))}
           </div>
-          <img className='back_flip_img' src={e.img} alt="Portfolio cover"/>
+          <img className="back_flip_img" src={e.img} alt="Portfolio cover" />
         </div>
       </div>
     </div>
@@ -149,7 +165,6 @@ const mapper = arr.map((e, i) => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   )
@@ -159,15 +174,10 @@ const Portfolio = () => (
   <div className="portfolio_main">
     <div className="portfolio_container">
       <h1>Portfolio</h1>
-      <p>
-       A catalog of recent freelance and personal projects.
-      </p>
+      <p>A catalog of recent freelance and personal projects.</p>
     </div>
 
-    <div className="portfolio_container container2">
-      {/* <div className='map_holder'>{map}</div> */}
-      {map}
-    </div>
+    <div className="portfolio_container container2">{map}</div>
   </div>
 )
 
