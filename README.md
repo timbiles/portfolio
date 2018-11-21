@@ -7,6 +7,7 @@ https://timbilestim.netlify.com/
 2. **[Budget Us](#Budget-Us)**
 3. **[Deron Biles - Portfolio](#Deron-Biles---Portfolio)**
 4. **[The Breaking Bad API](#The-Breaking-Bad-API)**
+5. **[CSS Flex Mex](#CSS-Flex-Mex)**
 
 ## Portfolio / Projects
 
@@ -45,3 +46,12 @@ https://www.breakingbadapi.com/
 
 #### Github Link
 https://github.com/timbiles/Breaking-Bad--API
+
+### CSS Flex Mex
+CSS Flex Mex is a tool designed to help developers understand the CSS display properties flex and grid.
+
+#### Site Url
+https://cssflexmex.netlify.com/
+
+#### Github Link
+https://github.com/timbiles/flex-box
