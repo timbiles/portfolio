@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
 
 import QuoteGenerator from '../components/QuoteGenerator/QuoteGenerator'
 import Icon from '../components/icons/icons'
 import photo from '../components/photos/tim.jpg'
 
-class About extends Component {
-  render() {
+
+const About = () => {
     return (
       <div className="about_main">
         <div className="about_container">
@@ -14,8 +14,8 @@ class About extends Component {
           <img className="profile_img" src={photo} alt="Tim photo" />
           <p className="about_name">I'm Tim!</p>
           <p>
-            I'm a full stack, javascript developer in the Dallas/Fort Worth
-            area, with a passion for front-end development. I have a particular
+            I am a full stack, javascript developer in the Dallas/Fort Worth
+            area, with a passion for front-end development. Currently, I work for DevMountain Dallas as a Full Stack developer and Lead Mentor. I have a particular
             interest in UX/UI design, and enjoy the challenge of learning a new
             program or framework. My background prior to web development was in
             music education, where I established a strong work ethic and clear
@@ -38,6 +38,5 @@ class About extends Component {
       </div>
     )
   }
-}
 
 export default About
