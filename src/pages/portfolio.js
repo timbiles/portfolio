@@ -30,23 +30,21 @@ const arr = [
     ],
   },
   {
-    title: 'BudgetUs',
-    img: budgetUs,
-    link: 'http://www.budgetus.online',
-    url: 'budgetus.online',
+    title: 'Region 20 Music',
+    img: region20,
+    link: 'https://region20music.com/',
+    url: 'region20music.com',
     description:
-      'An application structured to balance personal income and expenses. This was a team project.',
+      'The Region 20 Music site is the collection of all school sponsored music events from the Texas Region 20 school districts.',
     frameworks: [
       'Javascript',
       'React',
       'Redux',
+      'Custom Image Carousel',
       'Node',
       'Express',
-      'PostrgresSQL',
-      'Cypress',
-      'Auth0',
-      'Chart.js',
-      'Moment',
+      'PostgresSQL',
+      'Mobile Friendly'
     ],
   },
   {
@@ -87,6 +85,26 @@ const arr = [
     ],
   },
   {
+    title: 'BudgetUs',
+    img: budgetUs,
+    link: 'http://www.budgetus.online',
+    url: 'budgetus.online',
+    description:
+      'An application structured to balance personal income and expenses. This was a team project.',
+    frameworks: [
+      'Javascript',
+      'React',
+      'Redux',
+      'Node',
+      'Express',
+      'PostrgresSQL',
+      'Cypress',
+      'Auth0',
+      'Chart.js',
+      'Moment',
+    ],
+  },
+  {
     title: 'CSS Flex Mex',
     img: flex,
     link: 'https://cssflexmex.netlify.com/',
@@ -100,7 +118,7 @@ const arr = [
       'Custom modal',
       'Css code generator'
     ],
-  },
+  }
 ]
 
 const map = arr.map((e, i) => {
