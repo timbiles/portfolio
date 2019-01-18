@@ -74,9 +74,11 @@
 }
 
 .header h2:hover {
-  border-bottom: 5px solid rgb(127, 52, 197);
+  /* border-bottom: 5px solid rgb(127, 52, 197);
   padding-bottom: 1%;
-  /* transition: .2s ease; */
+  transition: .2s ease; */
+  opacity: .8;
+  transform: scale(1.01)
 }
 
 

@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 
 import QuoteGenerator from '../components/QuoteGenerator/QuoteGenerator'
 import Icon from '../components/icons/icons'
-import photo from '../components/photos/tim.jpg'
 
 
 const About = () => {
@@ -11,7 +10,7 @@ const About = () => {
       <div className="about_main">
         <div className="about_container">
           <h1>About</h1>
-          <img className="profile_img" src={photo} alt="Tim photo" />
+          <img className="profile_img" src='https://res.cloudinary.com/dwvrok1le/image/upload/v1547827962/tim.jpg' alt="Tim photo" />
           <p className="about_name">I'm Tim!</p>
           <p>
             I am a full stack, javascript developer in the Dallas/Fort Worth
