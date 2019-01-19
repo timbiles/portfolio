@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 90px;
-    background: linear-gradient(to top, rgb(190, 190, 190) 0%, #fff 80%);
+    height: 10vh;
+    background: #f4f4f4;
+    border-top: 1px solid #dfdfdf;
+    /* background: linear-gradient(to top, rgb(190, 190, 190) 0%, #fff 80%); */
 }
 
 .footer p {

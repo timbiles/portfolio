@@ -101,7 +101,7 @@ export const arr = [
       link: 'https://cssflexmex.netlify.com/',
       url: 'cssflexmex.netlify.com',
       description:
-        'CSS Flex Mex is a tool designed to help developers understand the CSS display properties flex and grid.',
+        'CSS Flex Mex is a tool designed to help developers understand the CSS \'flex\' and \'grid\' properties.',
       frameworks: [
         'Javascript',
         'React',

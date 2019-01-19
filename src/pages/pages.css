@@ -45,13 +45,15 @@ body {
 
 .index_img {
   width: 30px;
-  animation: mouseClick 4s 1s infinite;
+  /* animation: mouseClick 4s 1s infinite; */
+  animation: mouseClick 2s 1s infinite;
   transition: all 0.2s ease-in-out;
   margin-top: 20px;
 }
 
 .main_text {
-  animation: mouseClick2 4s 1s infinite;
+  /* animation: mouseClick2 4s 1s infinite; */
+  animation: mouseClick2 2s 1s infinite;
   color: rgb(80, 80, 80);
   font-size: 3rem;
   display: inline-block;
@@ -145,11 +147,12 @@ mark {
 .tooltip {
   position: relative;
   display: inline-block;
+  /* display: none; */
 }
 
 .tooltip .tooltip_hidden {
   visibility: hidden;
-  width: 120px;
+  width: 100px;
   background-color: rgb(80, 80, 80);
   color: #fff;
   font-size: 0.8rem;
@@ -160,7 +163,7 @@ mark {
   z-index: 1;
   bottom: 150%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -50px;
 }
 
 .th2 {

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import ContactIcon from '../components/icons/contact';
+
 const Contact = () => (
   <div className='contact_container'>
     <h1>Contact</h1>
@@ -10,8 +12,9 @@ const Contact = () => (
     <a className='contacts_email' href={'mailto: timbilestimbiles@gmail.com'}>timbilestimbiles@gmail.com</a>
     <p>817-456-9649</p>
     </div>
-    <div className="main_sub2 contacts_sub">
-      <div className="tooltip">
+    <ContactIcon type='contact'/>
+    {/* <div className="main_sub2 contacts_sub">
+       <div className="tooltip">
         <a href="https://github.com/timbiles" target="blank">
           <svg viewBox="0 0 128 128">
             <path
@@ -54,7 +57,7 @@ const Contact = () => (
           <span className="tooltip_hidden">Linkedin</span>
         </a>
       </div>
-    </div>
+    </div> */}
   </div>
 )
 
