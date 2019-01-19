@@ -54,6 +54,7 @@ export const arr = [
         'MassiveJS: Inline SQL',
         'Nodemailer',
         'Moment',
+        'Custom Blog'
       ],
     },
     {
