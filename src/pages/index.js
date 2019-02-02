@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import ContactIcons from '../components/icons/contact';
-import './pages.css'
+import '../styles/index.css'
 
 const IndexPage = () => (
   <div className="main_container">

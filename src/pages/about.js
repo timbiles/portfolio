@@ -1,8 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
-import QuoteGenerator from '../components/QuoteGenerator/QuoteGenerator'
 import Icon from '../components/icons/icons'
+import '../styles/about.css'
 
 
 const About = () => {
@@ -23,7 +22,7 @@ const About = () => {
           </p>
           <p>
             I am a husband, father, drummer, runner, board-game player,
-            TV-enthusiast, and coffee lover.{' '}
+            TV-enthusiast, and coffee lover.
           </p>
           <p>
             If you are in need of a specific project, send me a message and we

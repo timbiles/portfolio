@@ -1,0 +1,276 @@
+.portfolio_main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio_container {
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5%;
+  margin: 5% 0 2% 0;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.portfolio_container p {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container2 {
+  box-shadow: none;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.port_map a {
+  text-decoration: none;
+}
+
+.port_des {
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.port_map_sub {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.packages_map {
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  margin: 1%;
+  display: inline-block;
+  color: rgb(75, 75, 75);
+  position: relative;
+}
+
+.packages_map:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7f34c5;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.packages_map:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.packages_map:hover {
+  transform: 1s ease-in;
+}
+
+.port_sub_container {
+  display: flex;
+  position: relative;
+}
+
+.portfolio_img {
+  width: 100%;
+  box-shadow: 1px 1px 15px rgb(184, 184, 184);
+}
+
+.hidden_mag {
+  display: none;
+}
+.magnifying_glass {
+  width: 100px;
+}
+
+.port_hidden {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 102%;
+  width: 100%;
+}
+
+.port_sub_container:hover .port_hidden {
+  display: block;
+  animation: rightFade 0.7s;
+}
+
+.port_map_link {
+  display: inline-block;
+  color: rgb(56, 56, 56);
+}
+
+.e_holder {
+  display: flex;
+}
+
+.email_line {
+  display: none;
+  transform: translateX(5px);
+}
+
+.e_holder:hover .email_line {
+  display: block;
+  animation: email 1s;
+}
+
+.port_map {
+  width: 70vh;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  padding: 3% 2%;
+}
+
+.port_title {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 1%;
+}
+
+.back_title {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+/* ----flipper---- */
+
+/* flip the pane when hovered */
+.port_map:hover .flipper {
+  transform: rotateY(180deg);
+  transition-delay: 0.2s;
+}
+
+.port_map {
+  min-height: 50vh;
+}
+
+.front_flip,
+.back_flip {
+  min-height: 50vh;
+  height: 70vh;
+}
+
+.front_flip,
+.back_flip {
+  box-shadow: 1px 1px 5px 2px grey;
+  padding: 2%;
+  width: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* hide back of pane during swap */
+.front_flip,
+.back_flip {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front_flip {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back_flip {
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+.back_flip_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+  overflow: hidden;
+  margin: 0;
+  z-index: -1;
+}
+
+@keyframes email {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
+
+@keyframes rightFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio_main {
+    width: 100%;
+  }
+
+  .portfolio_container {
+    width: 95%;
+  }
+
+  .container2 {
+    width: 96%;
+  }
+}
+
+@media (max-width: 515px) {
+  .port_map {
+    width: 100vw;
+  }
+  .front_flip,
+  .back_flip {
+    width: 90%;
+    height: 55vh;
+    margin: 0 5%;
+  }
+
+  .port_map_link,
+  .port_des,
+  .packages_map {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .portfolio_container p {
+    font-size: 0.8rem;
+  }
+}

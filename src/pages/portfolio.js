@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import '../styles/portfolio.css'
 
 import { arr } from '../utils/data/portfolio'
 

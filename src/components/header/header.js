@@ -13,11 +13,9 @@ class Header extends Component {
       return (
         <Link key={i} className="header_title" to={`/${e}`}>
           <h2
-            className={
-              window.location.pathname === `/${e}` ? 'highlight' : null
-            }
+            className={window.location.pathname === `/${e}` ? 'highlight' : null}
           >
-            {e}
+          {e}
           </h2>
         </Link>
       )
