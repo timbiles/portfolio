@@ -22,6 +22,11 @@
   color: #fff;
 }
 
+.highlight {
+  border-bottom: 4px solid #7f34c5;
+}
+
+
 .focused_title {
   color: rgb(224, 224, 224);
   font-size: 10em;
@@ -33,10 +38,6 @@
   margin-left: 20%;
   width: 90px;
 }
-
-/* .header_title:active {
-  color: rgb(224, 224, 224);
-} */
 
 .header_right {
   display: flex;
@@ -74,9 +75,6 @@
 }
 
 .header h2:hover {
-  /* border-bottom: 5px solid rgb(127, 52, 197);
-  padding-bottom: 1%;
-  transition: .2s ease; */
   opacity: .8;
   transform: scale(1.01)
 }

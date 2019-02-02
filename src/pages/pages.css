@@ -122,7 +122,7 @@ body {
 }
 
 .main_sub2 svg:hover {
-  fill: rgb(127, 52, 197);
+  fill: #7f34c5;
   transition: 0.8s;
   cursor: pointer;
 }
