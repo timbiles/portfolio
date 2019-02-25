@@ -1,7 +1,7 @@
 # Tim Biles
 ## Portfolio Site
 
-https://timbilestim.netlify.com/
+https://timbilestim.com/
 
 1. **[Convoke](#Convoke-Groups)**
 2. **[Budget Us](#Budget-Us)**
@@ -12,7 +12,7 @@ https://timbilestim.netlify.com/
 ## Portfolio / Projects
 
 ### Convoke Groups
-A group meet-up application designed to bring people together through a common interest. This was an assignment that I completed in my time at DevMountain, Dallas. ** This project was voted overall out of my entire class.
+A group meet-up application designed to bring people together through a common interest. This was an assignment that I completed in my time at DevMountain, Dallas. ** This project was voted best overall out of my entire class.
 
 #### Site Url
 https://www.convokegroups.com/
