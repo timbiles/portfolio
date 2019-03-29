@@ -4,16 +4,14 @@ import Icon from '../components/icons/icons'
 import '../styles/about.css'
 
 
-const About = () => {
-    return (
+const About = () => (
       <div className="about_main">
         <div className="about_container">
           <h1>About</h1>
           <img className="profile_img" src='https://res.cloudinary.com/dwvrok1le/image/upload/v1547827962/tim.jpg' alt="Tim photo" />
           <p className="about_name">I'm Tim!</p>
           <p>
-            I am a full stack, javascript developer in the Dallas/Fort Worth
-            area, with a passion for front-end development. Currently, I work for DevMountain Dallas as a Full Stack developer and Lead Mentor. I have a particular
+            I am Front-end React developer for CrateBind in Dallas, TX. I have a particular
             interest in UX/UI design, and enjoy the challenge of learning a new
             program or framework. My background prior to web development was in
             music education, where I established a strong work ethic and clear
@@ -35,6 +33,5 @@ const About = () => {
         </div>
       </div>
     )
-  }
 
 export default About
