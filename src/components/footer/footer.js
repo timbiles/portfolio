@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import './footer.css'
 
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <div className="footer">
     <div className="footer_container">
       <p>© 2019 Olive Branch Designs</p>
