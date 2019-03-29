@@ -4,10 +4,11 @@
 https://timbilestim.com/
 
 1. **[Convoke](#Convoke-Groups)**
-2. **[Budget Us](#Budget-Us)**
-3. **[Deron Biles - Portfolio](#Deron-Biles---Portfolio)**
-4. **[The Breaking Bad API](#The-Breaking-Bad-API)**
-5. **[CSS Flex Mex](#CSS-Flex-Mex)**
+2. **[Region 20 Music](#Region-20-Music)**
+3. **[Budget Us](#Budget-Us)**
+4. **[Deron Biles - Portfolio](#Deron-Biles---Portfolio)**
+5. **[The Breaking Bad API](#The-Breaking-Bad-API)**
+6. **[CSS Flex Mex](#CSS-Flex-Mex)**
 
 ## Portfolio / Projects
 
@@ -19,6 +20,15 @@ https://www.convokegroups.com/
 
 #### Github Link
 https://github.com/timbiles/Convoke
+
+### Region 20 Music
+The collection of all school sponsored music events from region 20 in the Dallas/Fort Worth area.
+
+#### Site Url
+https://www.region20music.com/
+
+#### Github Link
+hhttps://github.com/timbiles/Region20-Music
 
 ### Budget Us
 An application structured to balance personal income and expenses. This was a team project that was completed upon my graduation from DevMoutain.

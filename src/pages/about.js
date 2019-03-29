@@ -3,7 +3,6 @@ import React from 'react'
 import Icon from '../components/icons/icons'
 import '../styles/about.css'
 
-
 const About = () => (
       <div className="about_main">
         <div className="about_container">
