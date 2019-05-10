@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import './header.css'
 
-const links = ['About', 'Portfolio', 'Contact'],
+const links = ['About', 'Portfolio', 'Contact']
 
 const map = links.map((e, i) => {
   return (
